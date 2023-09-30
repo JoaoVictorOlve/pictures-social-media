@@ -1,5 +1,5 @@
 # Pictures
-Pictures website project made with Angular, Node.JS and MySQL. Upload your favorite pictures and check other people pictures too!
+Pictures website project made with Angular, Node.JS and MySQL. Post your favorite pictures and check other people pictures too!
 
 ## Project setup
 
