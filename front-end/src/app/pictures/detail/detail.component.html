@@ -1,0 +1,18 @@
+<body>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Posted by {{ post.User?.name }}</mat-card-title>
+    <button (click)="deletePost()" *ngIf="userOwnsPost == true" class="delete-btn">
+      <img class="delete-icon" src="../../../assets/delete-btn.png">
+    </button>
+  </mat-card-header>
+  <div class="image-container">
+    <img class="block" height="468px" width="468px" [src]="'http://localhost:3000/' + post.image" onerror="src='../../../assets/nodata_img.png'">
+  </div>
+  <mat-card-content>
+    <p>
+      {{post.description}}
+    </p>
+  </mat-card-content>
+</mat-card>
+</body>

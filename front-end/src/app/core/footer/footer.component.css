@@ -1,0 +1,18 @@
+footer{
+  height:200px;
+  font-size:20px;
+  background-color:#f2f2f2;
+  color:#70757a;
+  display:flex;
+  justify-content:center;
+}
+
+p {
+  margin-top:30px;
+}
+
+a {
+  text-decoration:none;
+  color:#70757a;
+  font-weight:500;
+}

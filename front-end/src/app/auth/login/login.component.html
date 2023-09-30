@@ -1,0 +1,15 @@
+<main>
+  <div>
+    <form class="form-container" [formGroup]="userForm" (submit)="submit()">
+      <h1 class="login-title">Login</h1>
+
+      <input formControlName="email" type="email" class="form-control" placeholder="E-mail" required>
+
+      <input formControlName="password" type="password" class="form-control" placeholder="Senha" required>
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+
+      <p class="register-alert">Não tem conta? <a [routerLink]="['/auth/register']">Crie agora</a></p>
+    </form>
+  </div>
+</main>

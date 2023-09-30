@@ -1,0 +1,13 @@
+<form class="post-form" [formGroup]="postForm" (ngSubmit)="onSubmit()">
+
+  <div class="image-upload-container">
+      <input type="file" name="image" multiple (change)="selectImage($event)" />
+  </div>
+
+  <label class="post-description">Description:</label>
+
+  <textarea class="textarea-box" id="description-textarea" formControlName="description" ngModel required></textarea>
+
+  <button type="submit" class="submit-button">Post</button>
+
+</form>

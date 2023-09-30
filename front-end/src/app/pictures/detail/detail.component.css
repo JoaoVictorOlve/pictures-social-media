@@ -1,0 +1,58 @@
+body{
+  display:flex;
+  justify-content:center;
+}
+
+mat-card{
+  margin-top:20px;
+  margin-bottom:20px;
+  display:flex;
+  flex-direction:column;
+  width:468px;
+}
+
+.image-container{
+  width:468px;
+  height:390px;
+}
+
+.block{
+  width:468px;
+  height:390px;
+  background-size:cover;
+}
+
+mat-card-header{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  padding:10px 10px 10px;
+}
+
+.delete-btn{
+  background-color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  color:white;
+  border:none;
+  border-radius:2px;
+}
+
+.delete-icon{
+  width:30px;
+  height:30px;
+}
+
+mat-card-content{
+  display:flex;
+  justify-content:center;
+}
+
+mat-card-content p {
+  margin-top:5px;
+}
+
+

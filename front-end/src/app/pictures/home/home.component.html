@@ -1,0 +1,23 @@
+<main>
+  <div *ngIf="errorLoadingPage == false || pageIsEmpty == false">
+    <div class="posts-container">
+      <div class="post-card" *ngFor="let post of posts">
+        <img [routerLink]="['/post/'+post.id]" class="block" [src]="'http://localhost:3000/' + post.image" onerror="this.src='../../../assets/nodata_img.png'">
+      </div>
+    </div>
+
+    <div *ngIf="nextPageUrl != null" class="pagination-container">
+      <button (click)="loadNextPage()" class="load-more-button">Ver mais</button>
+    </div>
+    </div>
+
+    <div *ngIf="errorLoadingPage == true" class="error-page">
+      <h2>Something wrong happened...</h2>
+      <p>Come back later!</p>
+    </div>
+
+    <div *ngIf="pageIsEmpty == true" class="error-page">
+      <h2>There is no post for now...</h2>
+      <p><a [routerLink]="['/create']">Be the first one!</a></p>
+    </div>
+</main>
